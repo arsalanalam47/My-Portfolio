@@ -122,22 +122,20 @@ a { color: inherit; text-decoration: none; }
 /* HERO */
 .hero {
   position: relative;
-  min-height: 92vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
-  padding: 2rem clamp(1rem, 3vw, 4rem);
+  padding: 2rem clamp(1.5rem, 5vw, 4rem);
   overflow: hidden;
 }
 
-/* Force side-by-side layout even in narrow VS Code preview */
 .hero-inner {
   width: 100%;
   max-width: 1100px;
-  display: flex !important;
-  flex-direction: row !important;
+  display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 2.5rem;
   position: relative;
   z-index: 2;
 }
@@ -148,27 +146,26 @@ a { color: inherit; text-decoration: none; }
   min-width: 0;
 }
 
-/* Right side photo container (under "Get in touch") */
+/* Right side photo container */
 .hero-photo-wrapper {
   flex-shrink: 0;
-  margin-top: 0;
 }
 
-/* Photo sizing */
+/* Desktop Photo Size */
 .hero-photo {
-  width: 230px;
-  height: 280px;
+  width: 260px;
+  height: 320px;
   object-fit: cover;
   border-radius: 12px;
   border: 1px solid var(--line);
   background: var(--bg-soft);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
   display: block;
 }
 
 .hero-name {
   font-family: var(--display);
-  font-size: clamp(2.2rem, 5vw, 4.4rem);
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
   font-weight: 700;
   color: var(--blue-deep);
   line-height: 1.05;
@@ -178,7 +175,7 @@ a { color: inherit; text-decoration: none; }
 
 .hero-role {
   font-family: var(--display);
-  font-size: clamp(1rem, 2vw, 1.4rem);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
   color: var(--blue);
   font-weight: 500;
   margin-bottom: 1.2rem;
@@ -200,8 +197,8 @@ a { color: inherit; text-decoration: none; }
 
 .btn {
   font-family: var(--mono);
-  font-size: 0.85rem;
-  padding: 0.75rem 1.2rem;
+  font-size: 0.88rem;
+  padding: 0.75rem 1.3rem;
   border-radius: 3px;
   border: 1px solid var(--blue-deep);
   transition: transform 0.15s, background 0.15s, color 0.15s;
@@ -225,14 +222,31 @@ a { color: inherit; text-decoration: none; }
   100% { box-shadow: 0 0 0 0 rgba(47,158,68,0); }
 }
 
-/* Stack only on extremely small screens (<360px) */
-@media (max-width: 360px) {
+/* MOBILE RESPONSIVE FIX (Screens under 768px width) */
+@media (max-width: 768px) {
   .hero-inner {
-    flex-direction: column-reverse !important;
+    flex-direction: column-reverse; /* Places text first, photo under it */
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
   }
+
+  .hero-intro {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-status {
+    justify-content: center;
+  }
+
   .hero-photo {
-    width: 160px;
-    height: 200px;
+    width: 200px;
+    height: 250px;
   }
 }
 
