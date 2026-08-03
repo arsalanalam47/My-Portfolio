@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arsalan Alam — Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-bg" aria-hidden="true"></div>
+
+<nav class="nav" id="nav">
+<a href="#hero" class="nav-logo">
+  <img src="logo.png" alt="Team Logo" class="nav-logo-img">
+</a>
+  <div class="nav-links">
+    <a href="#about"><span class="slash">/</span>about</a>
+    <a href="#skills"><span class="slash">/</span>skills</a>
+    <a href="#projects"><span class="slash">/</span>projects</a>
+    <a href="#contact"><span class="slash">/</span>contact</a>
+  </div>
+  <a href="#contact" class="nav-cta">Get in touch</a>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-inner">
+      <p class="mono-label">Who am I?</p>
+      <h1 class="hero-name">Arsalan Alam</h1>
+      <p class="hero-role">Aspiring Backend Engineer</p>
+      <p class="hero-intro">I build backend systems and data-driven applications - comfortable across C++, Java, Python and SQL, with a growing footprint in web development.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View projects</a>
+        <a href="#" id="resume-link" class="btn btn-ghost">Download résumé</a>
+      </div>
+      <div class="hero-status">
+        <span class="dot"></span>
+        <span class="mono-label">Status: Open to Backend / Frontend / Database Bngineering roles</span>
+      </div>
+    </div>
+    <svg class="hero-schema" viewBox="0 0 520 520" aria-hidden="true">
+      <!-- ER-diagram style decorative schema -->
+      <g class="schema-node" transform="translate(40,40)">
+        <rect width="150" height="86" rx="4"/>
+        <line x1="0" y1="24" x2="150" y2="24"/>
+        <text x="12" y="16" class="node-title">users</text>
+        <text x="12" y="42" class="node-field">id · pk</text>
+        <text x="12" y="60" class="node-field">name</text>
+        <text x="12" y="78" class="node-field">role</text>
+      </g>
+      <g class="schema-node" transform="translate(300,120)">
+        <rect width="170" height="104" rx="4"/>
+        <line x1="0" y1="24" x2="170" y2="24"/>
+        <text x="12" y="16" class="node-title">projects</text>
+        <text x="12" y="42" class="node-field">id · pk</text>
+        <text x="12" y="60" class="node-field">stack</text>
+        <text x="12" y="78" class="node-field">repo_url</text>
+        <text x="12" y="96" class="node-field">user_id · fk</text>
+      </g>
+      <g class="schema-node" transform="translate(90,290)">
+        <rect width="150" height="68" rx="4"/>
+        <line x1="0" y1="24" x2="150" y2="24"/>
+        <text x="12" y="16" class="node-title">skills</text>
+        <text x="12" y="42" class="node-field">id · pk</text>
+        <text x="12" y="60" class="node-field">label</text>
+      </g>
+      <path class="rel" d="M190,80 C260,80 260,150 300,160"/>
+      <path class="rel" d="M115,126 C115,200 165,250 165,290"/>
+      <path class="rel" d="M300,190 C230,220 230,260 240,300"/>
+    </svg>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <p class="mono-label">ABOUT</p>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="section-title">Third-year student, Backend-leaning.</h2>
+        <p>I'm a third-year student focused on backend development, with hands-on experience in C++, Java, and Python. I've built projects ranging from database-driven systems to small applications with GUIs, and I'm currently expanding into web development.</p>
+        <p>I completed the CloudExify C++ Summer Internship, working on real project submissions under a structured program. I'm comfortable working across the stack when needed - I've used HTML, CSS, and Flask - but my main strength and interest is backend logic, data structures, and databases.</p>
+      </div>
+      <div class="about-card">
+        <div class="card-row"><span>Education</span><span>3rd year, UG</span></div>
+        <div class="card-row"><span>Focus</span><span>Backend / Frontend / Databases</span></div>
+        <div class="card-row"><span>Internship</span><span>CloudExify — C++, 2026</span></div>
+        <div class="card-row"><span>Location</span><span>Gilgit/Lahore,Pakistan</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <p class="mono-label">Skills</p>
+    <h2 class="section-title">What I work with?</h2>
+    <div class="skills-grid">
+      <div class="skill-col">
+        <h3>LANGUAGES</h3>
+        <ul>
+          <li>C++</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+      <div class="skill-col">
+        <h3>WEB</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Flask</li>
+        </ul>
+      </div>
+      <div class="skill-col">
+        <h3>CONCEPTS</h3>
+        <ul>
+          <li>Data Structures</li>
+          <li>Database Design</li>
+          <li>GUI Development (JavaFX)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <p class="mono-label">PROJECTS</p>
+    <h2 class="section-title">Selected work</h2>
+
+    <div class="projects-list">
+
+      <article class="project">
+        <div class="project-head">
+          <span class="mono-label"></span>
+          <h3>Accounting Management System</h3>
+        </div>
+        <p class="project-desc">Lets a user log salary and daily expenses, then generates a pie chart of the expense ratio per category at month end — helping track spending and plan savings.</p>
+        <div class="project-fields">
+          <div><span>Stack</span><span>Java · JavaFX</span></div>
+          <div><span>Highlight</span><span>Automated monthly expense breakdown by category</span></div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/arsalanalam47/Accounting_Management_System" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <span class="mono-label"></span>
+          <h3>Cricket Score Tracker</h3>
+        </div>
+        <p class="project-desc">Console-based live cricket score tracker — takes ball-by-ball input, manages the scoreboard and strike rotation, and surfaces the top batsman and bowler.</p>
+        <div class="project-fields">
+          <div><span>Stack</span><span>C++ · Data Structures</span></div>
+          <div><span>Highlight</span><span>Linked list for batting order, max heap for live leaderboard</span></div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/arsalanalam47/Console_Based_Live_Cricket_Score_Tracking_Application" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <span class="mono-label"></span>
+          <h3>Vaccination Management System</h3>
+        </div>
+        <p class="project-desc">Tracks vaccination records, schedules, and patient data with a normalized schema designed to avoid duplicate entries.</p>
+        <div class="project-fields">
+          <div><span>Stack</span><span>SQL · Python</span></div>
+          <div><span>Highlight</span><span>Normalized relational schema</span></div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/arsalanalam47/Vaccination_Management_System" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <span class="mono-label"></span>
+          <h3>Student Record System</h3>
+        </div>
+        <p class="project-desc">CloudExify internship project — a struct-based student record system supporting add, update, and delete operations.</p>
+        <div class="project-fields">
+          <div><span>Stack</span><span>C++</span></div>
+          <div><span>Highlight</span><span>CloudExify C++ Summer Internship submission</span></div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/arsalanalam47/CloudExify-cpp-P2-Arsalan-Alam" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <span class="mono-label"></span>
+          <h3>Number Guessing Game</h3>
+        </div>
+        <p class="project-desc">CloudExify Internship Project — a number guessing game with a high-score table ranked by number of tries.</p>
+        <div class="project-fields">
+          <div><span>Stack</span><span>C++</span></div>
+          <div><span>Highlight</span><span>CloudExify C++ Summer Internship submission</span></div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/arsalanalam47/CloudExify-Project1" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </article>
+
+      <article class="project project-pending">
+        <div class="project-head">
+          <span class="mono-label"></span>
+          <h3>School Database System</h3>
+          <span class="badge">in progress</span>
+        </div>
+        <p class="project-desc">A school database where an admin can add students and manage their fee expenses. Currently in development.</p>
+        <div class="project-fields">
+          <div><span>stack</span><span>SQL · Python · Flask</span></div>
+          <div><span>status</span><span>coming soon</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+<!-- CONTACT -->
+<section id="contact" class="section contact-section">
+  <p class="mono-label">CONTACT</p>
+  <h2 class="section-title">Let's talk</h2>
+  <p class="contact-intro">Open to backend and database engineering opportunities. Reach out any time.</p>
+  
+  <div class="contact-social-icons">
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=arslanalam4718@gmail.com" target="_blank" rel="noopener" class="social-icon" title="Email" aria-label="Email">
+  <i class="fa-solid fa-envelope"></i>
+</a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/arsalanalam47" target="_blank" rel="noopener" class="social-icon" title="GitHub" aria-label="GitHub">
+      <i class="fa-brands fa-github"></i>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://linkedin.com/in/arsalanalam47" target="_blank" rel="noopener" class="social-icon" title="LinkedIn" aria-label="LinkedIn">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+
+    <!-- WhatsApp (Replace with your phone number including country code, e.g. 923001234567) -->
+    <a href="https://wa.me/923405596963" target="_blank" rel="noopener" class="social-icon" title="WhatsApp" aria-label="WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p class="mono-label">© <span id="year"></span> Arsalan Alam — built with HTML, CSS &amp; JS</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
