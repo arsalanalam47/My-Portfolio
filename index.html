@@ -20,6 +20,7 @@
 </a>
   <div class="nav-links">
     <a href="#about"><span class="slash">/</span>about</a>
+    <a href="#education"><span class="slash">/</span>education</a>
     <a href="#skills"><span class="slash">/</span>skills</a>
     <a href="#projects"><span class="slash">/</span>projects</a>
     <a href="#contact"><span class="slash">/</span>contact</a>
@@ -28,55 +29,66 @@
 </nav>
 
 <main>
-
   <!-- HERO -->
-  <section id="hero" class="hero">
-    <div class="hero-inner">
+<section id="hero" class="hero">
+  <div class="hero-inner">
+    
+    <!-- LEFT COLUMN: All Text Content -->
+    <div class="hero-text-content">
       <p class="mono-label">Who am I?</p>
       <h1 class="hero-name">Arsalan Alam</h1>
       <p class="hero-role">Aspiring Backend Engineer</p>
       <p class="hero-intro">I build backend systems and data-driven applications - comfortable across C++, Java, Python and SQL, with a growing footprint in web development.</p>
+      
       <div class="hero-actions">
         <a href="#projects" class="btn btn-primary">View projects</a>
         <a href="#" id="resume-link" class="btn btn-ghost">Download résumé</a>
       </div>
+      
       <div class="hero-status">
         <span class="dot"></span>
-        <span class="mono-label">Status: Open to Backend / Frontend / Database Bngineering roles</span>
+        <span class="mono-label">Status: Open to Backend / Frontend / Database Engineering roles</span>
       </div>
     </div>
-    <svg class="hero-schema" viewBox="0 0 520 520" aria-hidden="true">
-      <!-- ER-diagram style decorative schema -->
-      <g class="schema-node" transform="translate(40,40)">
-        <rect width="150" height="86" rx="4"/>
-        <line x1="0" y1="24" x2="150" y2="24"/>
-        <text x="12" y="16" class="node-title">users</text>
-        <text x="12" y="42" class="node-field">id · pk</text>
-        <text x="12" y="60" class="node-field">name</text>
-        <text x="12" y="78" class="node-field">role</text>
-      </g>
-      <g class="schema-node" transform="translate(300,120)">
-        <rect width="170" height="104" rx="4"/>
-        <line x1="0" y1="24" x2="170" y2="24"/>
-        <text x="12" y="16" class="node-title">projects</text>
-        <text x="12" y="42" class="node-field">id · pk</text>
-        <text x="12" y="60" class="node-field">stack</text>
-        <text x="12" y="78" class="node-field">repo_url</text>
-        <text x="12" y="96" class="node-field">user_id · fk</text>
-      </g>
-      <g class="schema-node" transform="translate(90,290)">
-        <rect width="150" height="68" rx="4"/>
-        <line x1="0" y1="24" x2="150" y2="24"/>
-        <text x="12" y="16" class="node-title">skills</text>
-        <text x="12" y="42" class="node-field">id · pk</text>
-        <text x="12" y="60" class="node-field">label</text>
-      </g>
-      <path class="rel" d="M190,80 C260,80 260,150 300,160"/>
-      <path class="rel" d="M115,126 C115,200 165,250 165,290"/>
-      <path class="rel" d="M300,190 C230,220 230,260 240,300"/>
-    </svg>
-  </section>
 
+    <!-- RIGHT COLUMN: Photo under 'Get in touch' -->
+    <div class="hero-photo-wrapper">
+      <img src="My_Photo.png" alt="Arsalan Alam" class="hero-photo">
+    </div>
+
+  </div>
+
+  <svg class="hero-schema" viewBox="0 0 520 520" aria-hidden="true">
+    <!-- ER-diagram style decorative schema -->
+    <g class="schema-node" transform="translate(40,40)">
+      <rect width="150" height="86" rx="4"/>
+      <line x1="0" y1="24" x2="150" y2="24"/>
+      <text x="12" y="16" class="node-title">users</text>
+      <text x="12" y="42" class="node-field">id · pk</text>
+      <text x="12" y="60" class="node-field">name</text>
+      <text x="12" y="78" class="node-field">role</text>
+    </g>
+    <g class="schema-node" transform="translate(300,120)">
+      <rect width="170" height="104" rx="4"/>
+      <line x1="0" y1="24" x2="170" y2="24"/>
+      <text x="12" y="16" class="node-title">projects</text>
+      <text x="12" y="42" class="node-field">id · pk</text>
+      <text x="12" y="60" class="node-field">stack</text>
+      <text x="12" y="78" class="node-field">repo_url</text>
+      <text x="12" y="96" class="node-field">user_id · fk</text>
+    </g>
+    <g class="schema-node" transform="translate(90,290)">
+      <rect width="150" height="68" rx="4"/>
+      <line x1="0" y1="24" x2="150" y2="24"/>
+      <text x="12" y="16" class="node-title">skills</text>
+      <text x="12" y="42" class="node-field">id · pk</text>
+      <text x="12" y="60" class="node-field">label</text>
+    </g>
+    <path class="rel" d="M190,80 C260,80 260,150 300,160"/>
+    <path class="rel" d="M115,126 C115,200 165,250 165,290"/>
+    <path class="rel" d="M300,190 C230,220 230,260 240,300"/>
+  </svg>
+</section>
   <!-- ABOUT -->
   <section id="about" class="section">
     <p class="mono-label">ABOUT</p>
@@ -87,6 +99,7 @@
         <p>I completed the CloudExify C++ Summer Internship, working on real project submissions under a structured program. I'm comfortable working across the stack when needed - I've used HTML, CSS, and Flask - but my main strength and interest is backend logic, data structures, and databases.</p>
       </div>
       <div class="about-card">
+        
         <div class="card-row"><span>Education</span><span>3rd year, UG</span></div>
         <div class="card-row"><span>Focus</span><span>Backend / Frontend / Databases</span></div>
         <div class="card-row"><span>Internship</span><span>CloudExify — C++, 2026</span></div>
@@ -95,6 +108,38 @@
     </div>
   </section>
 
+<!-- EDUCATION -->
+  <section id="education" class="section">
+    <p class="mono-label">EDUCATION</p>
+    <h2 class="section-title">Academic background</h2>
+    <div class="education-list">
+
+      <article class="edu-item">
+        <div class="edu-head">
+          <h3>COMSATS University Islamabad,Lahore Campus</h3>
+          <span class="edu-duration">2024-present</span>
+        </div>
+        <p class="edu-degree">BS Computer Engineering</p>
+      </article>
+
+      <article class="edu-item">
+        <div class="edu-head">
+          <h3>HITEC School and College for Boys Taxila</h3>
+          <span class="edu-duration">2022-2024</span>
+        </div>
+        <p class="edu-degree">ICS (Intermediate in Computer Sciences)</p>
+      </article>
+
+      <article class="edu-item">
+        <div class="edu-head">
+          <h3>Al-Mehboob Model Academy Chamogarh,Gilgit,Gilgit-Baltistan</h3>
+          <span class="edu-duration">2010-2022</span>
+        </div>
+        <p class="edu-degree">Matriculation</p>
+      </article>
+
+    </div>
+  </section>
   <!-- SKILLS -->
   <section id="skills" class="section">
     <p class="mono-label">Skills</p>
