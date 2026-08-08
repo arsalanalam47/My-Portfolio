@@ -511,3 +511,15 @@ a { color: inherit; text-decoration: none; }
     display: none;
   }
 }
+.nav-logo {
+  font-family: var(--mono);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--blue-deep);
+  letter-spacing: -0.03em;
+  text-decoration: none;
+}
+
+.nav-logo .logo-bracket {
+  color: var(--blue);
+}
