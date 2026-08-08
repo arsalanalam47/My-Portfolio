@@ -324,10 +324,10 @@ a { color: inherit; text-decoration: none; }
 /* SKILLS */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 2rem;
-  text-align: center;
 }
+
 .skill-col h3 {
   font-family: var(--mono);
   font-size: 0.85rem;
@@ -337,13 +337,24 @@ a { color: inherit; text-decoration: none; }
   padding-bottom: 0.6rem;
   margin-bottom: 0.8rem;
 }
-.skill-col ul { list-style: none; }
+
+.skill-col ul { 
+  list-style: none; 
+}
+
 .skill-col li {
   padding: 0.4rem 0;
   color: var(--ink);
   font-weight: 500;
 }
 
+/* Restores the blue node bullets */
+.skill-col li::before {
+  content: "› ";
+  color: var(--blue);
+  font-family: var(--mono);
+  font-weight: 700;
+}
 /* EDUCATION */
 .education-list { display: flex; flex-direction: column; gap: 1.25rem; }
 
